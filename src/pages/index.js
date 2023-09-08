@@ -19,11 +19,15 @@ import {
   FaPencilAlt,
 } from "react-icons/fa";
 
+import JotForm from "../components/form";
+
 import { StaticImage } from "gatsby-plugin-image";
 
 import codezone from "../images/codezone-white.png";
 import psir from "../images/prashant-sir.jpg";
 import prsir from "../images/prabhat-sir.jpg";
+
+import { Footer } from "flowbite-react";
 
 const ListItem = ({ icon, children }) => (
   <li className="flex items-start mb-4">
@@ -48,53 +52,7 @@ const IndexPage = () => {
                 Code Zone
               </span>
             </a>
-            <div class="flex items-center lg:order-2">
-              <a
-                href="#"
-                class="text-gray-800 !text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 !hover:bg-gray-700 focus:outline-none !focus:ring-gray-800"
-              >
-                Log in
-              </a>
-              <a
-                href="#"
-                class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 !bg-primary-600 !hover:bg-primary-700 focus:outline-none !focus:ring-primary-800"
-              >
-                Get started
-              </a>
-              <button
-                data-collapse-toggle="mobile-menu-2"
-                type="button"
-                class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 !text-gray-400 !hover:bg-gray-700 !focus:ring-gray-600"
-                aria-controls="mobile-menu-2"
-                aria-expanded="false"
-              >
-                <span class="sr-only">Open main menu</span>
-                <svg
-                  class="w-6 h-6"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-                <svg
-                  class="hidden w-6 h-6"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-              </button>
-            </div>
+
             <div
               class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
               id="mobile-menu-2"
@@ -498,9 +456,21 @@ const IndexPage = () => {
               Join the Code Zone family today and let's turn your coding dreams
               into reality. Your coding adventure starts here!
             </p>
+            <div className="flex justify-center">
+              <JotForm />
+            </div>
           </div>
         </div>
       </section>
+      <Footer container>
+        <Footer.Copyright by="Code Zone™" href="/" year={2023} />
+        <Footer.LinkGroup>
+          <Footer.Link href="#">About</Footer.Link>
+          <Footer.Link href="#">Terms of Use</Footer.Link>
+          <Footer.Link href="#">Licensing</Footer.Link>
+          <Footer.Link href="#">Contact</Footer.Link>
+        </Footer.LinkGroup>
+      </Footer>
     </main>
   );
 };
