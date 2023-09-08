@@ -1,6 +1,8 @@
 import * as React from "react";
-import codezone from "../images/codezone-white.png";
+
 import { Timeline } from "flowbite-react";
+import { Card } from "flowbite-react";
+
 import {
   HiTemplate,
   HiUserGroup,
@@ -17,6 +19,9 @@ import {
   FaPencilAlt,
 } from "react-icons/fa";
 
+import { StaticImage } from "gatsby-plugin-image";
+
+import codezone from "../images/codezone-white.png";
 import psir from "../images/prashant-sir.jpg";
 import prsir from "../images/prabhat-sir.jpg";
 
@@ -263,62 +268,135 @@ const IndexPage = () => {
             </h2>
             <p className="font-light text-gray-200 lg:mb-16 sm:text-xl">
               An in-depth course designed to get you job-ready and hired by top
-              companies.
+              companies. This course will help you ace any interview, whether
+              it's for a tech giant or a startup.
             </p>
           </div>
-          <div className="max-w-xl mx-auto bg-white shadow-md rounded-lg overflow-hidden">
-            {" "}
-            <img
-              src="https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_640.jpg"
-              alt="Card Image"
-              className="w-full h-40 object-cover"
-            />
-            <div className="px-6 py-6">
-              <h5 className="text-2xl font-bold tracking-tight text-gray-900">
-                Complete Interview Preparation Course
-              </h5>
-              <p className="font-normal pt-1 text-gray-700">
-                This course will help you ace any interview, whether it's for a
-                tech giant or a startup.
-              </p>
-              <div className="max-w-xl mx-auto pt-10">
-                <ul className="list-disc text-black text-sm">
-                  <ListItem icon={<FaCode className="w-6 h-6 text-blue-500" />}>
-                    Coding Languages: Master the art of coding with our in-depth
-                    courses in various programming languages.
-                  </ListItem>
-                  <ListItem
-                    icon={<FaCube className="w-6 h-6 text-green-500" />}
-                  >
-                    Data Structures and Algorithms: Build a strong foundation in
-                    these fundamental concepts.
-                  </ListItem>
-                  <ListItem
-                    icon={<FaDatabase className="w-6 h-6 text-yellow-500" />}
-                  >
-                    Database Management Systems: Learn the ins and outs of
-                    database management and SQL.
-                  </ListItem>
-                  <ListItem icon={<FaCog className="w-6 h-6 text-red-500" />}>
-                    Project Development: Bring your coding skills to life with
-                    real-world projects.
-                  </ListItem>
-                  <ListItem
-                    icon={<FaCommentAlt className="w-6 h-6 text-purple-500" />}
-                  >
-                    Mock Interviews: Prepare for interviews with realistic,
-                    interview-like experiences.
-                  </ListItem>
-                  <ListItem
-                    icon={<FaPencilAlt className="w-6 h-6 text-indigo-500" />}
-                  >
-                    System Design: Understand the intricacies of designing
-                    complex systems.
-                  </ListItem>
-                </ul>
+          <div className="container mx-auto px-4 my-4">
+            <div className="grid grid-cols-3 gap-4">
+              <div className="p-4 rounded shadow-md">
+                <Card className="bg-indigo-200">
+                  <StaticImage
+                    src="https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_640.jpg"
+                    alt="developer"
+                  />
+                  <h5 className="text-lg font-bold tracking-tight text-gray-900 dark:text-white">
+                    <ListItem
+                      icon={<FaCode className="w-6 h-6 text-blue-500" />}
+                    >
+                      Coding Languages
+                    </ListItem>
+                  </h5>
+                  <p className="font-normal text-gray-700 dark:text-gray-400">
+                    Master the art of coding with our in-depth courses in
+                    various programming languages.
+                  </p>
+                </Card>
+              </div>
+
+              <div className="p-4 rounded shadow-md">
+                <Card className="bg-indigo-200">
+                  <StaticImage
+                    src="https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_640.jpg"
+                    alt="hello"
+                  />
+                  <h5 className="text-lg font-bold tracking-tight text-gray-900 dark:text-white">
+                    <ListItem
+                      icon={<FaCube className="w-6 h-6 text-green-500" />}
+                    >
+                      Data Structures and Algorithms
+                    </ListItem>
+                  </h5>
+                  <p className="font-normal text-gray-700 dark:text-gray-400">
+                    Build a strong foundation in the fundamental concepts of
+                    Data Structures and Algorithms.
+                  </p>
+                </Card>
+              </div>
+
+              <div className="p-4 rounded shadow-md">
+                <Card className="bg-indigo-200">
+                  <StaticImage
+                    src="https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_640.jpg"
+                    alt="hello"
+                  />
+                  <h5 className="text-lg font-bold tracking-tight text-gray-900 dark:text-white">
+                    <ListItem
+                      icon={<FaDatabase className="w-6 h-6 text-yellow-500" />}
+                    >
+                      Database Management Systems
+                    </ListItem>
+                  </h5>
+                  <p className="font-normal text-gray-700 dark:text-gray-400">
+                    Learn the ins and outs of database management and SQL,
+                    complete with queries frequently asked in interviews.
+                  </p>
+                </Card>
+              </div>
+
+              {/* Repeat the structure for the remaining grid elements */}
+
+              {/* Fourth Grid Element */}
+              <div className="p-4 rounded shadow-md">
+                <Card className="bg-indigo-200">
+                  <StaticImage
+                    src="https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_640.jpg"
+                    alt="hello"
+                  />
+                  <h5 className="text-lg font-bold tracking-tight text-gray-900 dark:text-white">
+                    <ListItem icon={<FaCog className="w-6 h-6 text-red-500" />}>
+                      Project Development
+                    </ListItem>
+                  </h5>
+                  <p className="font-normal text-gray-700 dark:text-gray-400">
+                    Bring your coding skills to life with real-world projects.
+                  </p>
+                </Card>
+              </div>
+
+              {/* Fifth Grid Element */}
+              <div className="p-4 rounded shadow-md">
+                <Card className="bg-indigo-200">
+                  <StaticImage
+                    src="https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_640.jpg"
+                    alt="hello"
+                  />
+                  <h5 className="text-lg font-bold tracking-tight text-gray-900 dark:text-white">
+                    <ListItem
+                      icon={
+                        <FaCommentAlt className="w-6 h-6 text-purple-500" />
+                      }
+                    >
+                      Mock Interviews
+                    </ListItem>
+                  </h5>
+                  <p className="font-normal text-gray-700 dark:text-gray-400">
+                    Prepare for interviews with realistic, interview-like
+                    experiences.
+                  </p>
+                </Card>
+              </div>
+
+              {/* Sixth Grid Element */}
+              <div className="p-4 rounded shadow-md">
+                <Card className="bg-indigo-200">
+                  <StaticImage
+                    src="https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_640.jpg"
+                    alt="hello"
+                  />
+                  <h5 className="text-lg font-bold tracking-tight text-gray-900 dark:text-white">
+                    <ListItem
+                      icon={<FaPencilAlt className="w-6 h-6 text-indigo-500" />}
+                    >
+                      System Design
+                    </ListItem>
+                  </h5>
+                  <p className="font-normal text-gray-700 dark:text-gray-400">
+                    Understand the intricacies of designing complex systems.
+                  </p>
+                </Card>
               </div>
             </div>
-            `
           </div>
         </div>
       </section>
@@ -384,7 +462,7 @@ const IndexPage = () => {
                   </span>
                   <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
                     <ul class="list-disc pl-6">
-                      <li class="text-indigo-600">Software Developer -1</li>
+                      <li class="text-indigo-600">Software Developer-1</li>
                       <li class="text-indigo-600">3+ yrs of experience</li>
                     </ul>
                   </p>
