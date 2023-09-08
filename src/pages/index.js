@@ -269,7 +269,8 @@ const IndexPage = () => {
             <p className="font-light text-gray-200 lg:mb-16 sm:text-xl">
               An in-depth course designed to get you job-ready and hired by top
               companies. This course will help you ace any interview, whether
-              it's for a tech giant or a startup.
+              it's for a tech giant or a startup. Our course covers the
+              following topics:
             </p>
           </div>
           <div className="container mx-auto px-4 my-4">
@@ -279,6 +280,7 @@ const IndexPage = () => {
                   <StaticImage
                     src="https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_640.jpg"
                     alt="developer"
+                    height={170}
                   />
                   <h5 className="text-lg font-bold tracking-tight text-gray-900 dark:text-white">
                     <ListItem
@@ -297,8 +299,9 @@ const IndexPage = () => {
               <div className="p-4 rounded shadow-md">
                 <Card className="bg-indigo-200">
                   <StaticImage
-                    src="https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_640.jpg"
-                    alt="hello"
+                    src="https://res.cloudinary.com/practicaldev/image/fetch/s--AO0dFdQ5--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://thepracticaldev.s3.amazonaws.com/i/srnvrd7vfeeq5qpxnabq.png"
+                    alt="dsa"
+                    height={170}
                   />
                   <h5 className="text-lg font-bold tracking-tight text-gray-900 dark:text-white">
                     <ListItem
@@ -317,8 +320,9 @@ const IndexPage = () => {
               <div className="p-4 rounded shadow-md">
                 <Card className="bg-indigo-200">
                   <StaticImage
-                    src="https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_640.jpg"
-                    alt="hello"
+                    src="https://cdn-ajfbi.nitrocdn.com/GuYcnotRkcKfJXshTEEKnCZTOtUwxDnm/assets/images/optimized/rev-ec5e39c/bs-uploads.toptal.io/blackfish-uploads/blog/post/seo/og_image_file/og_image/15493/0712-Bad_Practices_in_Database_Design_-_Are_You_Making_These_Mistakes_Dan_Social-754bc73011e057dc76e55a44a954e0c3-1890x0.png"
+                    alt="dbms"
+                    height={170}
                   />
                   <h5 className="text-lg font-bold tracking-tight text-gray-900 dark:text-white">
                     <ListItem
@@ -340,8 +344,9 @@ const IndexPage = () => {
               <div className="p-4 rounded shadow-md">
                 <Card className="bg-indigo-200">
                   <StaticImage
-                    src="https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_640.jpg"
+                    src="https://blogimages.softwaresuggest.com/blog/wp-content/uploads/2018/02/08190510/Generate-More-Revenue-Using-Project-Management-Software.jpg"
                     alt="hello"
+                    height={170}
                   />
                   <h5 className="text-lg font-bold tracking-tight text-gray-900 dark:text-white">
                     <ListItem icon={<FaCog className="w-6 h-6 text-red-500" />}>
@@ -358,8 +363,9 @@ const IndexPage = () => {
               <div className="p-4 rounded shadow-md">
                 <Card className="bg-indigo-200">
                   <StaticImage
-                    src="https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_640.jpg"
+                    src="https://www.usability.gov/sites/default/files/images/individual-interview-full.jpg"
                     alt="hello"
+                    height={170}
                   />
                   <h5 className="text-lg font-bold tracking-tight text-gray-900 dark:text-white">
                     <ListItem
@@ -383,6 +389,7 @@ const IndexPage = () => {
                   <StaticImage
                     src="https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_640.jpg"
                     alt="hello"
+                    height={170}
                   />
                   <h5 className="text-lg font-bold tracking-tight text-gray-900 dark:text-white">
                     <ListItem
