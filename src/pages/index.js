@@ -483,7 +483,7 @@ const IndexPage = () => {
                   <img
                     class="w-full h-[250px] rounded-lg sm:rounded-none sm:rounded-l-lg"
                     src={prsir}
-                    alt="Prashant Sir"
+                    alt="Prabhat Sir"
                   />
                 </a>
                 <div class="p-5">
@@ -533,9 +533,9 @@ const IndexPage = () => {
       <Footer container>
         <Footer.Copyright by="Code Zone™" href="/" year={2023} />
         <Footer.LinkGroup>
-          <Footer.Link href="#">About</Footer.Link>
+          <Footer.Link href="#about-us">About</Footer.Link>
           <Footer.Link href="/terms-of-service">Terms of Service</Footer.Link>
-          <Footer.Link href="#">Contact</Footer.Link>
+          <Footer.Link href="mailto:codezone001@gmail.com">Contact</Footer.Link>
         </Footer.LinkGroup>
       </Footer>
     </main>
