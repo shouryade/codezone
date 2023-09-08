@@ -128,14 +128,82 @@ const IndexPage = () => {
 
       {/* Section for About Us */}
 
+      <section class="bg-white font-montserrat">
+        <div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
+          <h2 class="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-black md:text-4xl">
+            Grow with Code Zone
+          </h2>
+          <p class="mb-8 text-2xl text-grey-900">
+            Our students have secured internships and PPOs from some of the top
+            companies in the world, including:
+          </p>
+          <div class="flex flex-wrap justify-center items-center mb-6 lg:mb-16">
+            <img
+              src="https://cdn.worldvectorlogo.com/logos/logo-amazon.svg"
+              class="max-h-16 mx-4 my-2 sm:my-0 py-2"
+            />
+
+            <img
+              src="https://cdn.worldvectorlogo.com/logos/walmart.svg"
+              class="max-h-16 mx-4 my-2 sm:my-0 py-2"
+            />
+
+            <img
+              src="https://design.gs.com/downloads/Goldman_Sachs_Signature.svg"
+              class="max-h-16 mx-4 my-2 sm:my-0 py-2"
+            />
+            <img
+              src="https://cdn.worldvectorlogo.com/logos/deloitte-2.svg"
+              class="max-h-16 mx-4 my-2 sm:my-0 py-2"
+            />
+
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/J_P_Morgan_Chase_Logo_2008_1.svg/1199px-J_P_Morgan_Chase_Logo_2008_1.svg.png?20230527022026"
+              class="max-h-16 mx-4 my-2 sm:my-0 py-2"
+            />
+
+            <img
+              src="https://cdn.worldvectorlogo.com/logos/bain-company-logo.svg"
+              class="max-h-16 mx-4 my-2 sm:my-0 py-2"
+            />
+            <img
+              src="https://cdn.worldvectorlogo.com/logos/accenture-6.svg"
+              class="max-h-16 mx-4 my-2 sm:my-0 py-2"
+            />
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/J_P_Morgan_Logo_2008_1.svg/2560px-J_P_Morgan_Logo_2008_1.svg.png"
+              class="max-h-16 mx-4 my-2 sm:my-0 py-2"
+            />
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Nagarro_logo_new.svg"
+              class="max-h-16 mx-4 my-2 sm:my-0 py-2"
+            />
+            <img
+              src="https://ww1.freelogovectors.net/wp-content/uploads/2021/12/narvarlogo-freelogovectors.net_-400x102.png?lossy=1&ssl=1&fit=400%2C102"
+              class="max-h-16 mx-4 my-2 sm:my-0 py-2"
+            />
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Tata_Consultancy_Services_Logo.svg/768px-Tata_Consultancy_Services_Logo.svg.png?20210617123944"
+              class="max-h-16 mx-4 my-2 sm:my-0 py-2"
+            />
+
+            <img
+              src="https://vtlogo.com/wp-content/uploads/2020/10/national-payments-corporation-of-india-npci-vector-logo.png"
+              class="max-h-16 mx-4 my-2 sm:my-0 py-2"
+            />
+          </div>
+        </div>
+      </section>
+
       <section class="bg-white " id="about-us">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 260">
           <path
             fill="#000b76"
             fill-opacity="1"
             d="M0,224L48,208C96,192,192,160,288,149.3C384,139,480,149,576,149.3C672,149,768,139,864,144C960,149,1056,171,1152,181.3C1248,192,1344,192,1392,192L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
           ></path>
         </svg>
+
         <div class="!pt-px py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
           <div class="max-w-screen-md">
             <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 ">
@@ -466,8 +534,7 @@ const IndexPage = () => {
         <Footer.Copyright by="Code Zone™" href="/" year={2023} />
         <Footer.LinkGroup>
           <Footer.Link href="#">About</Footer.Link>
-          <Footer.Link href="#">Terms of Use</Footer.Link>
-          <Footer.Link href="#">Licensing</Footer.Link>
+          <Footer.Link href="/terms-of-service">Terms of Service</Footer.Link>
           <Footer.Link href="#">Contact</Footer.Link>
         </Footer.LinkGroup>
       </Footer>
