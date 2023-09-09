@@ -300,8 +300,8 @@ const IndexPage = () => {
             </p>
           </div>
           <div className="container mx-auto px-4 my-4">
-            <div className="grid grid-cols-3 gap-4">
-              <div className="p-4 rounded shadow-md">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              <div className="p-4 rounded shadow-md md:w-full">
                 <Card className="bg-indigo-200">
                   <StaticImage
                     src="https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_640.jpg"
@@ -322,7 +322,7 @@ const IndexPage = () => {
                 </Card>
               </div>
 
-              <div className="p-4 rounded shadow-md">
+              <div className="p-4 rounded shadow-md md:w-full">
                 <Card className="bg-indigo-200">
                   <StaticImage
                     src="https://res.cloudinary.com/practicaldev/image/fetch/s--AO0dFdQ5--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://thepracticaldev.s3.amazonaws.com/i/srnvrd7vfeeq5qpxnabq.png"
@@ -343,7 +343,7 @@ const IndexPage = () => {
                 </Card>
               </div>
 
-              <div className="p-4 rounded shadow-md">
+              <div className="p-4 rounded shadow-md md:w-full">
                 <Card className="bg-indigo-200">
                   <StaticImage
                     src="https://cdn-ajfbi.nitrocdn.com/GuYcnotRkcKfJXshTEEKnCZTOtUwxDnm/assets/images/optimized/rev-ec5e39c/bs-uploads.toptal.io/blackfish-uploads/blog/post/seo/og_image_file/og_image/15493/0712-Bad_Practices_in_Database_Design_-_Are_You_Making_These_Mistakes_Dan_Social-754bc73011e057dc76e55a44a954e0c3-1890x0.png"
@@ -367,7 +367,7 @@ const IndexPage = () => {
               {/* Repeat the structure for the remaining grid elements */}
 
               {/* Fourth Grid Element */}
-              <div className="p-4 rounded shadow-md">
+              <div className="p-4 rounded shadow-md md:w-full">
                 <Card className="bg-indigo-200">
                   <StaticImage
                     src="https://blogimages.softwaresuggest.com/blog/wp-content/uploads/2018/02/08190510/Generate-More-Revenue-Using-Project-Management-Software.jpg"
@@ -386,7 +386,7 @@ const IndexPage = () => {
               </div>
 
               {/* Fifth Grid Element */}
-              <div className="p-4 rounded shadow-md">
+              <div className="p-4 rounded shadow-md md:w-full">
                 <Card className="bg-indigo-200">
                   <StaticImage
                     src="https://www.usability.gov/sites/default/files/images/individual-interview-full.jpg"
@@ -410,7 +410,7 @@ const IndexPage = () => {
               </div>
 
               {/* Sixth Grid Element */}
-              <div className="p-4 rounded shadow-md">
+              <div className="p-4 rounded shadow-md md:w-full">
                 <Card className="bg-indigo-200">
                   <StaticImage
                     src="https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_640.jpg"
@@ -456,7 +456,7 @@ const IndexPage = () => {
               <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
                 <a href="#">
                   <img
-                    class="w-full h-[250px] rounded-lg sm:rounded-none sm:rounded-l-lg"
+                    class="w-full h-[250px] rounded-lg sm:rounded-none sm:rounded-l-lg object-cover"
                     src={psir}
                     alt="Prashant Sir"
                   />
@@ -481,7 +481,7 @@ const IndexPage = () => {
               <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
                 <a href="#">
                   <img
-                    class="w-full h-[250px] rounded-lg sm:rounded-none sm:rounded-l-lg"
+                    class="w-full h-[250px] rounded-lg sm:rounded-none sm:rounded-l-lg object-cover"
                     src={prsir}
                     alt="Prabhat Sir"
                   />
