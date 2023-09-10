@@ -6,7 +6,6 @@
 <h1 align="center">
   Code Zone 
 </h1>
-![Vercel](http://therealsujitk-vercel-badge.vercel.app/?app=cz-codezone.vercel.zpp)
 ## 🚀 Quick start to edit files
 
 1.  **Clone this repository.**
