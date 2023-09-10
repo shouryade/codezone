@@ -1,21 +1,21 @@
 <p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
+  <a href="https://cz-codezone.vercel.app">
+    <img alt="Gatsby" src="https://github.com/shouryade/codezone/blob/main/src/images/codezone-white.png" width="60" />
   </a>
 </p>
 <h1 align="center">
-  Gatsby Minimal Starter
+  Code Zone 
 </h1>
+![Vercel](http://therealsujitk-vercel-badge.vercel.app/?app=cz-codezone.vercel.zpp)
+## 🚀 Quick start to edit files
 
-## 🚀 Quick start
-
-1.  **Create a Gatsby site.**
+1.  **Clone this repository.**
 
     Use the Gatsby CLI to create a new site, specifying the minimal starter.
 
     ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
+    # clone this repository
+    git clone https://github.com/shouryade/codezone.git
     ```
 
 2.  **Start developing.**
@@ -23,13 +23,13 @@
     Navigate into your new site’s directory and start it up.
 
     ```shell
-    cd my-gatsby-site/
+    cd codezone/
     npm run develop
     ```
 
 3.  **Open the code and start customizing!**
 
-    Your site is now running at http://localhost:8000!
+    Your site is now running at http://localhost:8000! 🥳
 
     Edit `src/pages/index.js` to see your site update in real-time!
 
@@ -42,8 +42,8 @@
     - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
     - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
 
-## 🚀 Quick start (Netlify)
+## 🚀 Quick start (Vercel)
 
-Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
+Deploy Code Zone with one click on [Vercel](https://vercel.com/signup):
 
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fshouryade%2Fcodezone)
