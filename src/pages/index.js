@@ -1,3 +1,5 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
 import * as React from "react";
 
 import { Timeline } from "flowbite-react";
@@ -35,6 +37,12 @@ const ListItem = ({ icon, children }) => (
     <div>{children}</div>
   </li>
 );
+
+AOS.init({
+  duration: 800, // Animation duration in milliseconds
+  easing: "ease-in-out", // Animation easing
+  offset: 100, // Offset (in pixels) from the element's top before the animation triggers
+});
 
 const IndexPage = () => {
   return (
@@ -111,7 +119,8 @@ const IndexPage = () => {
 
             <a
               href="#contact-us"
-              className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 text-gray-900 border-gray-300 hover:bg-gray-100 focus:ring-gray-100"
+              onClick={() => smoothScrollTo("contact-us")}
+              className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 bg-white border border-red-500 rounded-lg focus:ring-4 focus:ring-gray-100 text-gray-900 border-[#000b76] pulse-animation border-4"
             >
               Yes! Where do I sign up?
             </a>
@@ -137,7 +146,13 @@ const IndexPage = () => {
             Our students have secured internships and PPOs from some of the top
             companies in the world, including:
           </p>
-          <div class="flex flex-wrap justify-center items-center mb-6 lg:mb-16">
+          <div
+            class="flex flex-wrap justify-center items-center mb-6 lg:mb-16"
+            data-aos="fade-up"
+            data-aos-easing="ease-in-back"
+            data-aos-duration="500"
+            data-aos-anchor-placement="top-center"
+          >
             <img
               src="https://cdn.worldvectorlogo.com/logos/logo-amazon.svg"
               class="max-h-16 mx-4 my-2 sm:my-0 py-2"
@@ -218,7 +233,7 @@ const IndexPage = () => {
           </div>
           <div class="px-4 py-8 rounded-lg">
             <Timeline horizontal>
-              <Timeline.Item>
+              <Timeline.Item data-aos="fade-right" data-aos-delay="100">
                 <Timeline.Point icon={HiTemplate} />
                 <Timeline.Content>
                   <Timeline.Title>Comprehensive Learning</Timeline.Title>
@@ -232,7 +247,7 @@ const IndexPage = () => {
                   </Timeline.Body>
                 </Timeline.Content>
               </Timeline.Item>
-              <Timeline.Item>
+              <Timeline.Item data-aos="fade-right" data-aos-delay="250">
                 <Timeline.Point icon={HiOutlineUsers} />
                 <Timeline.Content>
                   <Timeline.Title>Experienced Faculty</Timeline.Title>
@@ -244,7 +259,7 @@ const IndexPage = () => {
                   </Timeline.Body>
                 </Timeline.Content>
               </Timeline.Item>
-              <Timeline.Item>
+              <Timeline.Item data-aos="fade-right" data-aos-delay="400">
                 <Timeline.Point icon={HiOutlineHand} />
                 <Timeline.Content>
                   <Timeline.Title>Hands-On Approach</Timeline.Title>
@@ -257,7 +272,7 @@ const IndexPage = () => {
                   </Timeline.Body>
                 </Timeline.Content>
               </Timeline.Item>
-              <Timeline.Item>
+              <Timeline.Item data-aos="fade-right" data-aos-delay="550">
                 <Timeline.Point icon={HiOutlineLibrary} />
                 <Timeline.Content>
                   <Timeline.Title>Placement Support</Timeline.Title>
@@ -269,7 +284,7 @@ const IndexPage = () => {
                   </Timeline.Body>
                 </Timeline.Content>
               </Timeline.Item>
-              <Timeline.Item>
+              <Timeline.Item data-aos="fade-right" data-aos-delay="700">
                 <Timeline.Point icon={HiUserGroup} />
                 <Timeline.Content>
                   <Timeline.Title>Community</Timeline.Title>
@@ -506,7 +521,7 @@ const IndexPage = () => {
         </section>
       </section>
 
-      <section id="contact-us">
+      <section>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
             fill="#000b76"
@@ -515,7 +530,7 @@ const IndexPage = () => {
           ></path>
         </svg>
 
-        <div class="py-10 pt-0">
+        <div class="py-10 pt-0" id="contact-us">
           <div class="container mx-auto text-center">
             <h2 class="text-3xl font-semibold font-montserrat text-[#000b76] mb-4">
               Ready to embark on your coding journey?
