@@ -90,6 +90,7 @@ const IndexPage = () => {
                 <li>
                   <a
                     href="#about-us"
+                    onClick={() => smoothScrollTo("about-us")}
                     class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 !text-gray-400 lg:!hover:text-white !hover:bg-gray-700 !hover:text-white lg:!hover:bg-transparent !border-gray-700"
                   >
                     About Us
@@ -98,6 +99,7 @@ const IndexPage = () => {
                 <li>
                   <a
                     href="#courses"
+                    onClick={() => smoothScrollTo("courses")}
                     class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 !text-gray-400 lg:!hover:text-white !hover:bg-gray-700 !hover:text-white lg:!hover:bg-transparent !border-gray-700"
                   >
                     Courses
@@ -132,7 +134,7 @@ const IndexPage = () => {
             <a
               href="#contact-us"
               onClick={() => smoothScrollTo("contact-us")}
-              className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 bg-white border border-red-500 rounded-lg focus:ring-4 focus:ring-gray-100 text-gray-900 border-[#000b76] pulse-animation border-4"
+              className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 bg-white rounded-lg focus:ring-4 focus:ring-gray-100 text-gray-900 border-sky-200 pulse-animation border-4"
             >
               Yes! Where do I sign up?
             </a>
@@ -222,7 +224,7 @@ const IndexPage = () => {
         </div>
       </section>
 
-      <section class="bg-white " id="about-us">
+      <section class="bg-white" id="about-us">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 260">
           <path
             fill="#000b76"
@@ -328,7 +330,11 @@ const IndexPage = () => {
           </div>
           <div className="container mx-auto px-4 my-4">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              <div className="p-4 rounded shadow-md md:w-full">
+              <div
+                className="p-4 rounded shadow-md md:w-full"
+                data-aos="fade-up"
+                data-aos-delay="0"
+              >
                 <Card className="bg-indigo-200">
                   <StaticImage
                     src="https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_640.jpg"
@@ -349,7 +355,11 @@ const IndexPage = () => {
                 </Card>
               </div>
 
-              <div className="p-4 rounded shadow-md md:w-full">
+              <div
+                className="p-4 rounded shadow-md md:w-full"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
                 <Card className="bg-indigo-200">
                   <StaticImage
                     src="https://res.cloudinary.com/practicaldev/image/fetch/s--AO0dFdQ5--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://thepracticaldev.s3.amazonaws.com/i/srnvrd7vfeeq5qpxnabq.png"
@@ -370,7 +380,11 @@ const IndexPage = () => {
                 </Card>
               </div>
 
-              <div className="p-4 rounded shadow-md md:w-full">
+              <div
+                className="p-4 rounded shadow-md md:w-full"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
                 <Card className="bg-indigo-200">
                   <StaticImage
                     src="https://cdn-ajfbi.nitrocdn.com/GuYcnotRkcKfJXshTEEKnCZTOtUwxDnm/assets/images/optimized/rev-ec5e39c/bs-uploads.toptal.io/blackfish-uploads/blog/post/seo/og_image_file/og_image/15493/0712-Bad_Practices_in_Database_Design_-_Are_You_Making_These_Mistakes_Dan_Social-754bc73011e057dc76e55a44a954e0c3-1890x0.png"
@@ -391,10 +405,11 @@ const IndexPage = () => {
                 </Card>
               </div>
 
-              {/* Repeat the structure for the remaining grid elements */}
-
-              {/* Fourth Grid Element */}
-              <div className="p-4 rounded shadow-md md:w-full">
+              <div
+                className="p-4 rounded shadow-md md:w-full"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
                 <Card className="bg-indigo-200">
                   <StaticImage
                     src="https://blogimages.softwaresuggest.com/blog/wp-content/uploads/2018/02/08190510/Generate-More-Revenue-Using-Project-Management-Software.jpg"
@@ -412,8 +427,11 @@ const IndexPage = () => {
                 </Card>
               </div>
 
-              {/* Fifth Grid Element */}
-              <div className="p-4 rounded shadow-md md:w-full">
+              <div
+                className="p-4 rounded shadow-md md:w-full"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
                 <Card className="bg-indigo-200">
                   <StaticImage
                     src="https://www.usability.gov/sites/default/files/images/individual-interview-full.jpg"
@@ -436,8 +454,11 @@ const IndexPage = () => {
                 </Card>
               </div>
 
-              {/* Sixth Grid Element */}
-              <div className="p-4 rounded shadow-md md:w-full">
+              <div
+                className="p-4 rounded shadow-md md:w-full"
+                data-aos="fade-up"
+                data-aos-delay="500"
+              >
                 <Card className="bg-indigo-200">
                   <StaticImage
                     src="https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_640.jpg"
@@ -461,7 +482,7 @@ const IndexPage = () => {
         </div>
       </section>
 
-      <section class="bg-white !bg-gray-900">
+      <section class="bg-gray-900">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 160 1440 159">
           <path
             fill="#000b76"

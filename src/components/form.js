@@ -15,7 +15,7 @@ const JotForm = () => {
         height: "539px",
         border: "none",
       }}
-      className="w-full max-w-lg mx-auto bg-white rounded-lg shadow-lg p-6"
+      className="w-full max-w-lg mx-auto bg-white rounded-lg shadow-lg p-6 md:w-full lg:w-full"
     ></iframe>
   );
 };
