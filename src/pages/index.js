@@ -1,6 +1,8 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 import * as React from "react";
+import { useEffect } from "react";
+import { smoothScrollTo } from "../utils/scroll-utils";
 
 import { Timeline } from "flowbite-react";
 import { Card } from "flowbite-react";
@@ -38,13 +40,23 @@ const ListItem = ({ icon, children }) => (
   </li>
 );
 
-AOS.init({
-  duration: 800, // Animation duration in milliseconds
-  easing: "ease-in-out", // Animation easing
-  offset: 100, // Offset (in pixels) from the element's top before the animation triggers
-});
-
 const IndexPage = () => {
+  let AOS;
+
+  useEffect(() => {
+    const AOS = require("aos");
+    AOS.init({
+      duration: 800, // Animation duration in milliseconds
+      easing: "ease-in-out", // Animation easing
+      offset: 100, // Offset (in pixels) from the element's top before the animation triggers
+    });
+  }, []);
+
+  useEffect(() => {
+    if (AOS) {
+      AOS.refresh();
+    }
+  });
   return (
     <main>
       <header>
