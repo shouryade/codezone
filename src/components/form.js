@@ -5,7 +5,6 @@ const JotForm = () => {
     <iframe
       id="JotFormIFrame-232505929007051"
       title="Form"
-      onLoad={() => window.parent.scrollTo(0, 0)}
       allowTransparency="true"
       allow="geolocation; microphone; camera"
       src="https://form.jotform.com/232505929007051"

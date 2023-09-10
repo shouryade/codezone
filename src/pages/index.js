@@ -502,7 +502,7 @@ const IndexPage = () => {
             </p>
             <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
               <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
-                <a href="#">
+                <a href="https://www.linkedin.com/in/prashant-goel-372b6699/">
                   <img
                     class="w-full h-[250px] rounded-lg sm:rounded-none sm:rounded-l-lg object-cover"
                     src={psir}
@@ -578,13 +578,34 @@ const IndexPage = () => {
           </div>
         </div>
       </section>
-      <Footer container>
-        <Footer.Copyright by="Code Zone™" href="/" year={2023} />
-        <Footer.LinkGroup>
-          <Footer.Link href="#about-us">About</Footer.Link>
-          <Footer.Link href="/terms-of-service">Terms of Service</Footer.Link>
-          <Footer.Link href="mailto:codezone001@gmail.com">Contact</Footer.Link>
-        </Footer.LinkGroup>
+      <Footer className="container mx-auto p-4">
+        <div className="md:flex md:items-center md:justify-between">
+          <div className="text-center md:text-left mb-4 md:mb-0">
+            <Footer.Copyright by="Code Zone™" href="/" year={2023} />
+          </div>
+          <div className="text-center md:text-right">
+            <Footer.LinkGroup className="md:inline-block">
+              <Footer.Link
+                href="#about-us"
+                className="block md:inline mx-2 mt-2 md:mt-0"
+              >
+                About
+              </Footer.Link>
+              <Footer.Link
+                href="/terms-of-service"
+                className="block md:inline mx-2 mt-2 md:mt-0"
+              >
+                Terms of Service
+              </Footer.Link>
+              <Footer.Link
+                href="mailto:codezone001@gmail.com"
+                className="block md:inline mx-2 mt-2 md:mt-0"
+              >
+                Contact
+              </Footer.Link>
+            </Footer.LinkGroup>
+          </div>
+        </div>
       </Footer>
     </main>
   );
